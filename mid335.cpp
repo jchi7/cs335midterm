@@ -106,8 +106,7 @@ double freq(note_t note, int octave_delta)
 }
 
 //-----------------------------------------------------------
-//Generate a frequency in hz that is half_steps away from C_4
-//Do not modify this function.
+// Unit Test For the freq function MIDTERM
 //-----------------------------------------------------------
 void uTest(double tolerance)
 {
