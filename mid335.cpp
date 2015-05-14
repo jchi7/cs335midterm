@@ -105,10 +105,14 @@ double freq(note_t note, int octave_delta)
     return freq;
 }
 
+//-----------------------------------------------------------
+//Generate a frequency in hz that is half_steps away from C_4
+//Do not modify this function.
+//-----------------------------------------------------------
 void uTest(double tolerance)
 {
     double calculated, dif;
-    int testnum = 0, correct = 0, bad = 0;
+    int testnum = 0, bad = 0;
     printf("\ntolerance: %3f\n", tolerance);
     printf("freq function unit-test\n\n");
     printf("note octave value     diff\n");
@@ -121,7 +125,6 @@ void uTest(double tolerance)
             printf(" %-6d %-3d %.5f %6f", note, octave, calculated, dif);
             if (dif < tolerance) {
                 printf("     good\n");
-                correct++;
             } else {
                 printf("  <------ bad\n");
                 bad++;
